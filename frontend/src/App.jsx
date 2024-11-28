@@ -1,11 +1,18 @@
 import './App.css'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+import Notification from './components/Notification'
+import Home from './pages/home/Home'
 
 function App() {
 
 
   return (
-   <>
-   <div className='underline text-3xl text-blue-200' >Hello</div>
+   <  >
+   <Notification/>
+   <Navbar/>
+   <Home/>
+   <Footer/>
    </>
   )
 }

@@ -1,0 +1,32 @@
+export const cardData = [
+    {
+        "id":1,
+        "name":"Havit",
+        "price":1200,
+        "imageUrl":"https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$"
+    },
+    {
+        "id":2,
+        "name":"abc",
+        "price":120,
+        "imageUrl":""
+    },
+    {
+        "id":3,
+        "name":"abc",
+        "price":120,
+        "imageUrl":""
+    },
+    {
+        "id":4,
+        "name":"abc",
+        "price":120,
+        "imageUrl":""
+    },
+    {
+        "id":5,
+        "name":"abc",
+        "price":120,
+        "imageUrl":""
+    },
+]

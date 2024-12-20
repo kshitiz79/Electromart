@@ -16,9 +16,9 @@ const Footer = () => {
     </div>
     <div className="flex flex-col gap-3">
         <h1 className="text-xl font-bold">Support</h1>
-        <h3 className="text-lg">Get 10 off your first order</h3>
-        <h3 className="text-lg">Get 10 off your first order</h3>
-        <h3 className="text-lg">Get 10 off your first order</h3>
+        <h3 className="text-lg">I.M.S. ENGINEERING <br /> COLLEGE GHAZIABAD</h3>
+        <h3 className="text-lg">electromartnow@gmail.com</h3>
+        <h3 className="text-lg">+919628350440</h3>
     </div>
     <div className="flex flex-col gap-3">
         <h1 className="text-xl font-bold">Account</h1>

@@ -1,8 +1,9 @@
+
 export const cardData = [
     {
       id: 1,
       discount: "40",
-      imageUrl: "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$",
+      imageUrl: "",
       name: "HAVIT HV-G92 Gamepad",
       currentPrice: "120",
       originalPrice: "160",
@@ -12,7 +13,7 @@ export const cardData = [
     {
       id: 2,
       discount: "35",
-      "imageUrl" : "",
+      imageUrl : "",
       name: "AK-900 Wired Keyboard",
       currentPrice: "960",
       originalPrice: "1160",
@@ -38,5 +39,5 @@ export const cardData = [
       originalPrice: "400",
       rating: "5",
       reviews: "99"
-    }
+    },
   ];

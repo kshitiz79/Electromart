@@ -1,3 +1,5 @@
+import Banner from "../../assets/Banner.png"
+import loginLogo from "../../assets/loginLogo.png"
 
 const Hero = () => {
   return (
@@ -31,7 +33,7 @@ const Hero = () => {
     </div>
   </div>
   <div className="w-3/4 bg-white p-8 ">
-      <img src="image/Banner.png" alt="Banner" />
+      <img src={Banner} alt="Banner" />
   </div>
 </div>
 

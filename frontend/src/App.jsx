@@ -8,6 +8,8 @@ import Login from './pages/login/Login'
 import Signup from './pages/signup/Signup'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
+import AllProducts from './pages/allproducts/AllProducts'
+import SinglePage from './pages/singleProductPage/SinglePage'
 
 function App() {
 
@@ -22,6 +24,9 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/allproducts" element={<AllProducts />} />
+      <Route path="/singleproduct" element={<SinglePage />} />
+      <Route path="*" element={<h1>Page not found</h1>} />
     </Routes>
    <Footer/>
    </>

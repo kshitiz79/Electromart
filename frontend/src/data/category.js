@@ -1,0 +1,22 @@
+export const categoryData=[
+    {
+        id:"1",
+        name:"phones",
+        image:"/image/cell.png"
+    },
+    {
+        id:"2",
+        name:"phones",
+        image:"/image/cell.png"
+    },
+    {
+        id:"3",
+        name:"phones",
+        image:"/image/cell.png"
+    },
+    {
+        id:"4",
+        name:"phones",
+        image:"/image/cell.png"
+    },
+]

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import loginLogo from '../../assets/loginLogo.png'
 
 const Signup = () => {
   return (
     <div className='mt-6 flex items-center justify-center'>
             <div className='w-3/5  '>
-                <img src="/image/loginLogo.png" className='w-full h-full my-auto' alt="" />
+                <img src={loginLogo} className='w-full h-full my-auto' alt="" />
             </div>
             <div className='w-2/5 flex justify-center items-center'>
                 <div className=''>

@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav className="flex justify-around items-center font-[Poppins] shadow-md h-20  border-b border-gray-300">
     <div>
-        <h1 className="text-3xl font-bold">
+        <Link to="/" className="text-3xl font-bold">
             ELECTROMART
-        </h1>
+        </Link>
     </div>
     <div className="flex items-center justify-center text-gray-700 gap-10 text-xl">
         

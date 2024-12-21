@@ -1,9 +1,12 @@
+import React from 'react'
+import { Link } from "react-router-dom"
 
 const Card = ({ card }) => { 
 
   return (
-    <div className="flex flex-col min-w-[240px] w-[270px]">
-      <div className="flex overflow-hidden gap-1 items-start px-3 pt-3 pb-12 max-w-full rounded bg-neutral-100 w-[270px]">
+    <Link to="/singleProduct" >
+      <div className="flex flex-col min-w-[240px]   w-[270px]">
+      <div className="flex overflow-hidden gap-1 items-start px-3 pt-3 hover:bg-slate-500 pb-12 max-w-full rounded bg-neutral-100 w-[270px]">
         <div className="flex flex-col text-xs whitespace-nowrap text-neutral-50">
           <div className="gap-2.5 self-start px-3 py-1 bg-red-500 rounded">
             -{card.discount}%
@@ -18,13 +21,13 @@ const Card = ({ card }) => {
         <div className="flex flex-col">
           <img
             loading="lazy"
-            src=""
+            src="/image/FillHeart.png"
             alt=""
             className="object-contain aspect-square w-[34px]"
           />
           <img
             loading="lazy"
-            src=""
+            src="/image/FillEye.png"
             alt=""
             className="object-contain mt-2 aspect-square w-[34px]"
           />
@@ -39,7 +42,7 @@ const Card = ({ card }) => {
         <div className="flex gap-2 items-start mt-2 text-sm font-semibold text-black whitespace-nowrap">
           <img
             loading="lazy"
-            src=""
+            src="/image/Fivestar.png"
             alt={`${card.rating} star rating`}
             className="object-contain shrink-0 aspect-[5] w-[100px]"
           />
@@ -47,6 +50,7 @@ const Card = ({ card }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
 

@@ -22,8 +22,8 @@ const Contact = () => {
                 <p>
                     you within 24 hours.
                 </p>
-                <p className='mt-3' >Emails: customer@exclusive.com</p>
-                <p className='mt-3'>Emails: support@exclusive.com</p>
+                <p className='mt-3' >Emails: electromartnow@gmail.com</p>
+                <p className='mt-3'>Emails: devanshhub@gmail.com</p>
             </div>
             <div className='w-2/3 rounded-sm p-6 shadow-3xl '>
                 <form>

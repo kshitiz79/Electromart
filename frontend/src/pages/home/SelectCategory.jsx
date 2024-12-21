@@ -8,11 +8,10 @@ const SelectCategory = () => {
         <hr />
           <div className="flex items-center mt-10 " >
             <div className="h-5 w-3 rounded-sm bg-red-500 mr-2" ></div>
-            <h1 className=" text-red-500 text-sm font-semibold " >catagory</h1></div>
+            <h1 className=" text-red-500 text-sm font-semibold " >Category</h1></div>
           <div className="flex justify-between "> 
-              <h1 className="text-2xl font-semibold mt-5" >Browse by category</h1>
+              <h1 className="text-3xl font-semibold mt-5" >Browse by category</h1>
               <div>
-  
               <span>{`<`}</span>
               <span>{`>`}</span>
               </div>

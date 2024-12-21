@@ -1,5 +1,5 @@
 import React from 'react'
-import females from "../../assets/females.png"
+import ourstory1 from "../../assets/ourstory1.jpg"
 import headphone from "../../assets/headphone.png"
 import selleractive from "../../assets/selleractive.png"
 import grosssale from "../../assets/grosssale.png"
@@ -21,11 +21,11 @@ const About = () => {
             laudantium ad quos possimus ipsam repellat nobis beatae facilis rem, corporis ullam quis quasi aliquam placeat voluptatem adipisci facere autem.
           </p>
         </div>
-        <div className=' w-1/2'>
-          <img src={females} alt="" />
+        <div className='pl-10 w-1/2'>
+          <img src={ourstory1} alt="" />
         </div>
       </div>
-      <div className='flex justify-center items-center gap-5 mt-28' >
+      <div className='flex justify-center items-center gap-5 mt-15' >
         <div className='w-1/4 flex flex-col hover:bg-red-500 hover:shadow-3xl rounded-lg hover:text-white justify-center items-center gap-5 py-10  border-2 '>
           <img src={selleractive} alt="" />
           <span className='font-semibold text-4xl' >10.5K</span>

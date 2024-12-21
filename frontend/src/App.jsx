@@ -11,6 +11,9 @@ import Contact from './pages/contact/Contact'
 import AllProducts from './pages/allproducts/AllProducts'
 import SinglePage from './pages/singleProductPage/SinglePage'
 
+import Cart from './pages/cart/Cart'
+import CheckOut from './pages/checkout/CheckOut'
+
 function App() {
 
 
@@ -26,6 +29,8 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/allproducts" element={<AllProducts />} />
       <Route path="/singleproduct" element={<SinglePage />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<CheckOut />} />
       <Route path="*" element={<h1>Page not found</h1>} />
     </Routes>
    <Footer/>

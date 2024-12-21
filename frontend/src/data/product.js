@@ -18,7 +18,8 @@ export const cardData = [
       currentPrice: "960",
       originalPrice: "1160",
       rating: "4",
-      reviews: "75"
+      reviews: "75",
+      category:"gaming"
     },
     {
       id: 3,
@@ -28,7 +29,8 @@ export const cardData = [
       currentPrice: "370",
       originalPrice: "400",
       rating: "5",
-      reviews: "99"
+      reviews: "99",
+      category:"gaming"
     },
     {
       id: 4,
@@ -38,7 +40,8 @@ export const cardData = [
       currentPrice: "960",
       originalPrice: "1160",
       rating: "5",
-      reviews: "99"
+      reviews: "99",
+      category:"gaming"
     },
     {
       id: 5,
@@ -48,7 +51,8 @@ export const cardData = [
       currentPrice: "120",
       originalPrice: "160",
       rating: "5",
-      reviews: "88"
+      reviews: "88",
+      category:"gaming" 
     },
     {
       id: 6,

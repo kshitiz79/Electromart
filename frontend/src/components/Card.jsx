@@ -48,8 +48,8 @@ const Card = ({ card }) => {
         <div className="flex flex-col items-start self-start mt-4 text-base font-medium">
           <div className="self-stretch text-black">{card.name}</div>
           <div className="flex gap-3 items-start mt-2 whitespace-nowrap">
-            <div className="text-red-500">${card.currentPrice}</div>
-            <div className="text-black line-through opacity-50">${card.originalPrice}</div>
+            <div className="text-red-500">₹{card.currentPrice}</div>
+            <div className="text-black line-through opacity-50">₹{card.originalPrice}</div>
           </div>
           <div className="flex gap-2 items-start mt-2 text-sm font-semibold text-black whitespace-nowrap">
             <img

@@ -9,7 +9,7 @@ const CartCard = ({cardData}) => {
                     <img className='h-[10%] w-[10%]' src={cardData.image} alt="" />
                     <h1 className='ml-2 text-xs'>{cardData.name.slice(1,19)}...</h1>
                 </div>
-                <h1 className='ml-6 mr-64'>${cardData.currentPrice}</h1>
+                <h1 className='ml-6 mr-64'>₹{cardData.currentPrice}</h1>
                 <h1 className='mr-64 ml-5'>2</h1>
                 <h1 className='ml-10'>${cardData.currentPrice*2}</h1>
             </div>

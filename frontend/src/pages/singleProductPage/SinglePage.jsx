@@ -44,7 +44,7 @@ const SinglePage = () => {
                 </div>
                 <div className='w-[35%]  '>
                     <h1 className='font-semibold text-xl'>Havic HV G-92 Gamepad</h1>
-                    <h2 className='text-xl mb-5 mt-5'>$192.00</h2>
+                    <h2 className='text-xl mb-5 mt-5'>₹19200.00</h2>
                     <p className='text-sm mb-5'>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
                     <hr />
                     <div className="mt-5 flex items-center gap-6">

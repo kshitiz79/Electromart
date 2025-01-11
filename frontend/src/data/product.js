@@ -3,13 +3,14 @@ export const cardData = [
     {
       id: 1,
       discount: "40",
-      image: "/image/Havit.png",
-      name: "HAVIT HV-G92 Gamepad",
-      currentPrice: "120",
-      originalPrice: "160",
+      image: "/image/Havitfront.png",
+      name: "Havic HV G-92 Gamepad",
+      currentPrice: "19200",
+      originalPrice: "25999",
       rating: "5",
       reviews: "88"
     },
+
     {
       id: 2,
       discount: "35",
@@ -55,6 +56,16 @@ export const cardData = [
       category:"gaming" 
     },
     {
+      id: 1,
+      discount: "40",
+      image: "/image/Havitfront.png",
+      name: "Havic HV G-92 Gamepad",
+      currentPrice: "19200",
+      originalPrice: "25999",
+      rating: "5",
+      reviews: "88"
+    },
+    {
       id: 6,
       discount: "35",
       image : "/image/keyboard.png",
@@ -91,6 +102,16 @@ export const cardData = [
       name: "HAVIT HV-G92 Gamepad",
       currentPrice: "120",
       originalPrice: "160",
+      rating: "5",
+      reviews: "88"
+    },
+    {
+      id: 1,
+      discount: "40",
+      image: "/image/Havitfront.png",
+      name: "Havic HV G-92 Gamepad",
+      currentPrice: "19200",
+      originalPrice: "25999",
       rating: "5",
       reviews: "88"
     },
@@ -135,6 +156,16 @@ export const cardData = [
       reviews: "88"
     },
     {
+      id: 1,
+      discount: "40",
+      image: "/image/Havitfront.png",
+      name: "Havic HV G-92 Gamepad",
+      currentPrice: "19200",
+      originalPrice: "25999",
+      rating: "5",
+      reviews: "88"
+    },
+    {
       id: 2,
       discount: "35",
       image : "/image/keyboard.png",
@@ -174,6 +205,17 @@ export const cardData = [
       rating: "5",
       reviews: "88"
     },
+    {
+      id: 1,
+      discount: "40",
+      image: "/image/Havitfront.png",
+      name: "Havic HV G-92 Gamepad",
+      currentPrice: "19200",
+      originalPrice: "25999",
+      rating: "5",
+      reviews: "88"
+    },
+    
     {
       id: 2,
       discount: "35",

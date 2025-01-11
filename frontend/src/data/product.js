@@ -5,10 +5,14 @@ export const cardData = [
       discount: "40",
       image: "/image/Havitfront.png",
       name: "Havic HV G-92 Gamepad",
-      currentPrice: "19200",
+      currentPrice: "192",
       originalPrice: "25999",
       rating: "5",
-      reviews: "88"
+      reviews: "88",
+      image1:"/image/Havit1.png",
+      image2:"/image/Havit2.png",
+      image3:"/image/Havit3.png",
+      image4:"/image/Havit4.png",
     },
 
     {
@@ -34,7 +38,7 @@ export const cardData = [
       category:"gaming"
     },
     {
-      id: 4,
+      id: 40,
       discount: "25",
       image: "/image/Laptop.png",
       name: "ASUS FHD Gaming Laptop",
@@ -56,9 +60,9 @@ export const cardData = [
       category:"gaming" 
     },
     {
-      id: 1,
+      id: 13,
       discount: "40",
-      image: "/image/Havitfront.png",
+      image: "/image/Havit.png",
       name: "Havic HV G-92 Gamepad",
       currentPrice: "19200",
       originalPrice: "25999",
@@ -106,9 +110,9 @@ export const cardData = [
       reviews: "88"
     },
     {
-      id: 1,
+      id: 14,
       discount: "40",
-      image: "/image/Havitfront.png",
+      image: "/image/Havit.png",
       name: "Havic HV G-92 Gamepad",
       currentPrice: "19200",
       originalPrice: "25999",
@@ -146,7 +150,7 @@ export const cardData = [
       reviews: "99"
     },
     {
-      id: 13,
+      id: 15,
       discount: "40",
       image: "/image/Havit.png",
       name: "HAVIT HV-G92 Gamepad",
@@ -156,9 +160,9 @@ export const cardData = [
       reviews: "88"
     },
     {
-      id: 1,
+      id: 16,
       discount: "40",
-      image: "/image/Havitfront.png",
+      image: "/image/Havit.png",
       name: "Havic HV G-92 Gamepad",
       currentPrice: "19200",
       originalPrice: "25999",
@@ -166,7 +170,7 @@ export const cardData = [
       reviews: "88"
     },
     {
-      id: 2,
+      id: 17,
       discount: "35",
       image : "/image/keyboard.png",
       name: "AK-900 Wired Keyboard",
@@ -176,7 +180,7 @@ export const cardData = [
       reviews: "75"
     },
     {
-      id: 3,
+      id: 18,
       discount: "30",
       image: "/image/Monitor.png",
       name: "IPS LCD Gaming Monitor",
@@ -186,7 +190,7 @@ export const cardData = [
       reviews: "99"
     },
     {
-      id: 4,
+      id: 19,
       discount: "25",
       image: "/image/Laptop.png",
       name: "ASUS FHD Gaming Laptop",
@@ -196,7 +200,7 @@ export const cardData = [
       reviews: "99"
     },
     {
-      id: 1,
+      id: 20,
       discount: "40",
       image: "/image/Havit.png",
       name: "HAVIT HV-G92 Gamepad",
@@ -206,9 +210,9 @@ export const cardData = [
       reviews: "88"
     },
     {
-      id: 1,
+      id: 21,
       discount: "40",
-      image: "/image/Havitfront.png",
+      image: "/image/Havit.png",
       name: "Havic HV G-92 Gamepad",
       currentPrice: "19200",
       originalPrice: "25999",
@@ -217,7 +221,7 @@ export const cardData = [
     },
     
     {
-      id: 2,
+      id: 22,
       discount: "35",
       image : "/image/keyboard.png",
       name: "AK-900 Wired Keyboard",
@@ -227,7 +231,7 @@ export const cardData = [
       reviews: "75"
     },
     {
-      id: 3,
+      id: 23,
       discount: "30",
       image: "/image/Monitor.png",
       name: "IPS LCD Gaming Monitor",
@@ -237,7 +241,7 @@ export const cardData = [
       reviews: "99"
     },
     {
-      id: 4,
+      id: 24,
       discount: "25",
       image: "/image/Laptop.png",
       name: "ASUS FHD Gaming Laptop",

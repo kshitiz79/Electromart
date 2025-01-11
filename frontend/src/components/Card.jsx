@@ -1,12 +1,23 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
+import { useDispatch } from 'react-redux';
+import { addItem } from '../features/cart/cartSlice';
 
 const Card = ({ card }) => {
 
   const [show, setShow] = useState(false);
 
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    dispatch(addItem(card));
+  };
+
+  // console.log(card);
+  
+
   return (
-    <Link to="/singleProduct" >
+    <Link to={`/allproducts/${card.id}`} >
       <div className="flex flex-col  w-[270px]  ">
         <div
           className="flex   overflow-hidden flex-col gap-1  max-w-full rounded bg-neutral-100 "
@@ -43,7 +54,7 @@ const Card = ({ card }) => {
               />
             </div>
           </div>
-          <Link to="/32" className={`h-[40px] flex justify-center  items-center text-white w-[100%] bg-black  ${show ? "opacity-100" : "opacity-0"}`} >Add to Cart</Link>
+          <Link to="" className={`h-[40px] flex justify-center  items-center text-white w-[100%] bg-black  ${show ? "opacity-100" : "opacity-0"}` } onClick={handleAddToCart} >Add to Cart</Link>
         </div>
         <div className="flex flex-col items-start self-start mt-4 text-base font-medium">
           <div className="self-stretch text-black">{card.name}</div>

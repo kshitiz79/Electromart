@@ -13,10 +13,18 @@ import SinglePage from './pages/singleProductPage/SinglePage'
 
 import Cart from './pages/cart/Cart'
 import CheckOut from './pages/checkout/CheckOut'
+import { useSelector } from 'react-redux'
 
 function App() {
 
+  // const user = useSelector((state) => state.user);
 
+  // if(!user.loggedIn){
+  //   return (
+  //     <Login/>
+  //   )
+  // }
+  
   return (
    <>
    <Notification/>
@@ -28,7 +36,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/allproducts" element={<AllProducts />} />
-      <Route path="/singleproduct" element={<SinglePage />} />
+      <Route path="/allproducts/:id" element={<SinglePage />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<CheckOut />} />
       <Route path="*" element={<h1>Page not found</h1>} />

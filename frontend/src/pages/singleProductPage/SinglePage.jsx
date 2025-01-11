@@ -4,17 +4,22 @@ import { Link } from "react-router-dom"
 
 
 import Havitfront from "../../assets/Havitfront.png"
-import Havit1 from "../../assets/Havit1.png"
-import Havit2 from "../../assets/Havit2.png"
-import Havit3 from "../../assets/Havit3.png"
-import Havit4 from "../../assets/Havit4.png"
+// import Havit1 from "../../assets/Havit1.png"
+// import Havit2 from "../../assets/Havit2.png"
+// import Havit3 from "../../assets/Havit3.png"
+// import Havit4 from "../../assets/Havit4.png"
 import { cardData } from '../../data/product'
 import Card from '../../components/Card'
+import { useParams } from "react-router-dom";
 
 const SinglePage = () => {
     const [count, setCount] = useState(1);
     const [selectedColor, setSelectedColor] = useState("");
+    const { id } = useParams(); // `id` is a string from useParams
+  const numericId = Number(id); // Convert to a number
 
+  const filteredData = cardData.filter((item) => item.id === numericId);
+    
     const increment = () => {
         setCount(count + 1);
     }
@@ -32,19 +37,21 @@ const SinglePage = () => {
         <div className='w-[80%] flex  flex-col mx-auto mt-20 mb-20    '>
             <div className='flex  gap-10'>
                 <div className='w-[65%] flex gap-5' >
-                    <div className='w-[25%] flex flex-col gap-5 ' >
-                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={Havit1} alt="" />
-                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={Havit2} alt="" />
-                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={Havit3} alt="" />
-                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={Havit4} alt="" />
+                    {filteredData[0]?.image1 ?(
+                        <div className='w-[25%] flex flex-col gap-5 ' >
+                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={filteredData[0]?.image1 ||"/image/Havit1.png"} alt="" />
+                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={filteredData[0]?.image2 ||"/image/Havit2.png"} alt="" />
+                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={filteredData[0]?.image3 ||"/image/Havit3.png"} alt="" />
+                        <img className='bg-gray-100 p-4 hover:bg-gray-200' src={filteredData[0]?.image4 ||"/image/Havit1.png"} alt="" />
                     </div>
+                    ):""}
                     <div className='h-[100%] w-[100%] flex items-center justify-center hover:bg-gray-200 bg-gray-100'>
-                        <img src={Havitfront} alt="" />
+                        <img className='h-[80%] w-[80%]' src={filteredData[0]?.image} alt="" />
                     </div>
                 </div>
                 <div className='w-[35%]  '>
-                    <h1 className='font-semibold text-xl'>Havic HV G-92 Gamepad</h1>
-                    <h2 className='text-xl mb-5 mt-5'>₹19200.00</h2>
+                    <h1 className='font-semibold text-xl'>{filteredData[0].name}</h1>
+                    <h2 className='text-xl mb-5 mt-5'>${filteredData[0].currentPrice}</h2>
                     <p className='text-sm mb-5'>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
                     <hr />
                     <div className="mt-5 flex items-center gap-6">

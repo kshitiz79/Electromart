@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem } from '../../features/cart/cartSlice';
+import { decreaseItemQuantity, increaseItemQuantity } from '../../features/cart/cartSlice';
 
 
-import Havitfront from "../../assets/Havitfront.png"
+//import Havitfront from "../../assets/Havitfront.png"
 // import Havit1 from "../../assets/Havit1.png"
 // import Havit2 from "../../assets/Havit2.png"
 // import Havit3 from "../../assets/Havit3.png"
@@ -13,12 +16,31 @@ import Card from '../../components/Card'
 import { useParams } from "react-router-dom";
 
 const SinglePage = () => {
-    const [count, setCount] = useState(1);
-    const [selectedColor, setSelectedColor] = useState("");
     const { id } = useParams(); // `id` is a string from useParams
-  const numericId = Number(id); // Convert to a number
+    const numericId = Number(id); // Convert to a number
+    const item = useSelector((state) => state.cart);
+
+
+    const filteredItem = item.items.filter((item) => item.id === numericId);
+
+    const [count, setCount] = useState(filteredItem[0]?.quantity||1);
+    
+    const [selectedColor, setSelectedColor] = useState("");
 
   const filteredData = cardData.filter((item) => item.id === numericId);
+
+  const dispatch = useDispatch();
+  
+  
+
+  
+
+
+  const handleAddToCart = () => {
+      dispatch(addItem({ item: filteredData[0], quantity: count }));
+    };
+   
+    
     
     const increment = () => {
         setCount(count + 1);
@@ -119,7 +141,7 @@ const SinglePage = () => {
                             <div className=' w-20 h-10 border-t border-b flex items-center justify-center'>{count}</div>
                             <button className='h-10 w-10 border rounded-r hover:border-black hover:bg-red-500' onClick={increment} >+</button>
                         </div>
-                        <button className=" bg-red-500 rounded hover:bg-red-600 border text-white py-2 px-12" >Buy Now</button>
+                        <button className=" bg-red-500 rounded hover:bg-red-600 border text-white py-2 px-12" onClick={handleAddToCart} >Add to cart</button>
                         <button className='h-10 w-10 border rounded hover:border-black flex items-center justify-center hover:invert hover:bg-cyan-400'>
                             <img src="/image/Wishlist.png" alt="" />
                         </button>

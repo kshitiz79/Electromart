@@ -10,11 +10,11 @@ const Card = ({ card }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addItem(card));
+    dispatch(addItem({item:card, quantity: 1}));
   };
 
   // console.log(card);
-  
+
 
   return (
     <Link to={`/allproducts/${card.id}`} >
@@ -54,7 +54,8 @@ const Card = ({ card }) => {
               />
             </div>
           </div>
-          <Link to="" className={`h-[40px] flex justify-center  items-center text-white w-[100%] bg-black  ${show ? "opacity-100" : "opacity-0"}` } onClick={handleAddToCart} >Add to Cart</Link>
+          <Link to="" className={`h-[40px] flex justify-center  items-center text-white w-[100%] bg-black  ${show ? "opacity-100" : "opacity-0"}`} onClick={handleAddToCart} >
+            <img src="/image/Carticon.png" className='mr-3' alt="carticon" />Add to Cart</Link>
         </div>
         <div className="flex flex-col items-start self-start mt-4 text-base font-medium">
           <div className="self-stretch text-black">{card.name}</div>

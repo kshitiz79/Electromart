@@ -14,6 +14,7 @@ import SinglePage from './pages/singleProductPage/SinglePage'
 import Cart from './pages/cart/Cart'
 import CheckOut from './pages/checkout/CheckOut'
 import { useSelector } from 'react-redux'
+import Productslider from './components/Productslider'
 
 function App() {
 

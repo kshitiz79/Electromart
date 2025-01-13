@@ -13,11 +13,16 @@ const cartSlice = createSlice({
   reducers: {
     // Add an item to the cart
     addItem: (state, action) => {
-      const newItem = action.payload;
+      const newItem = action.payload.item;
+      const quantity = action.payload.quantity;
+      // console.log(newItem);
+      
       const existingItem = state.items.find((item) => item.id === newItem.id);
 
       if (existingItem) {
-        existingItem.quantity += 1;
+        existingItem.quantity += (quantity===1)?1:quantity;
+        console.log(existingItem.quantity);
+        
         existingItem.totalPrice += parseFloat(newItem.currentPrice);
       } else {
         state.items.push({
@@ -29,7 +34,7 @@ const cartSlice = createSlice({
           originalPrice: parseFloat(newItem.originalPrice),
           rating: newItem.rating,
           reviews: newItem.reviews,
-          quantity: 1,
+          quantity: quantity,
           totalPrice: parseFloat(newItem.currentPrice),
         });
       }

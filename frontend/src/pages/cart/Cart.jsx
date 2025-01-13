@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {  clearCart } from '../../features/cart/cartSlice';
 
 
+
 const Cart = () => {
     // console.log(cardData);
 

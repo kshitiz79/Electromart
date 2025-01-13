@@ -1,4 +1,7 @@
 import React from 'react'
+
+
+//Imported images
 import ourstory1 from "../../assets/ourstory1.jpg"
 import headphone from "../../assets/headphone.png"
 import selleractive from "../../assets/selleractive.png"
@@ -7,6 +10,7 @@ import customeractive from "../../assets/customeractive.png"
 import monthlysale from "../../assets/monthlysale.png"
 import Tick from "../../assets/Tick.png"
 import Services from "../../assets/Services.png"
+import Productslider from '../../components/Productslider'
 
 const About = () => {
   return (
@@ -47,7 +51,6 @@ const About = () => {
           <span>Annual Gross Sale On Site</span>
         </div>
       </div>
-     
       <div className='flex mt-28 justify-between py-4 px-8 mb-28'>
         <div className='w-1/3 flex flex-col items-center justify-around'>
           <img src={Services} alt="" />
@@ -64,8 +67,9 @@ const About = () => {
           <h1 className='uppercase font-semibold mt-6' >MONEY BACK GUARANTEE </h1>
           <span className='mt-2' >We reurn money within 30 days</span>
         </div>
-
+        
       </div>
+      
     </div>
   )
 }

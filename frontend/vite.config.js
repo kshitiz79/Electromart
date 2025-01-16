@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Adjust if your app is hosted on a subdirectory
+  base: '/frontend', // Adjust if your app is hosted on a subdirectory
   build: {
     outDir: 'dist', // Ensure the output directory is correct
   },

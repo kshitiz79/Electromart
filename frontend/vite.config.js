@@ -1,4 +1,10 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
 export default defineConfig({
-  base: '/frontend/', // Use '/' for root
   plugins: [react()],
+  base: '/', // Adjust if your app is hosted on a subdirectory
+  build: {
+    outDir: 'dist', // Ensure the output directory is correct
+  },
 });

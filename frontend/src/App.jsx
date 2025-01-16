@@ -12,7 +12,8 @@ import AllProducts from './pages/allproducts/AllProducts'
 import SinglePage from './pages/singleProductPage/SinglePage'
 
 import Cart from './pages/cart/Cart'
-import CheckOut from './pages/checkout/CheckOut'
+import CheckOut from "./pages/checkout/Checkout";
+
 import { useSelector } from 'react-redux'
 import Productslider from './components/Productslider'
 

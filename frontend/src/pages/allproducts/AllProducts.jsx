@@ -1,5 +1,5 @@
 import React from 'react'
-import { cardData } from '../../data/product'
+import { cardData } from '../../data/product.js'
 import Card from '../../components/Card'
 
 const AllProducts = () => {

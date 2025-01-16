@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom"
-import { cardData } from "../data/product"
+import { cardData } from "../data/product.js"
 
 const Navbar = () => {
     const user = useSelector((state) => state.user);

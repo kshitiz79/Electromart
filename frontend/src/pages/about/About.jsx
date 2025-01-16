@@ -19,10 +19,21 @@ const About = () => {
         <div className=' w-1/2 mx-auto pr-20  '>
           <h1 className='font-semibold text-4xl mb-4'>Our Story</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa facilis, sit incidunt magnam sapiente consequatur corrupti praesentium tempora delectus voluptatem vero, libero labore blanditiis. Nulla reprehenderit sit earum eaque
+            We are an innovative e-commerce platform specializing in high-quality electronic products. From cutting-edge gadgets and top-tier appliances to essential accessories, ElectroMart brings you the best in the world of electronics—all at unbeatable prices.
+
+            Shop smart, shop ElectroMart.
           </p>
           <p className='mt-3'>
-            laudantium ad quos possimus ipsam repellat nobis beatae facilis rem, corporis ullam quis quasi aliquam placeat voluptatem adipisci facere autem.
+          Why choose ElectroMart?
+            <br />
+             ~ Wide Selection: Explore an extensive range of products tailored to meet. 
+            <br />
+             ~ Quality Assurance: We offer only the best, sourced from trusted brands.
+            <br />
+             ~ Seamless Experience: Enjoy a user-friendly interface, secure payment.
+            <br />
+             ~ Expert Support: Our team is here to help you make informed decisions and provide post-purchase assistance.
+            <br />
           </p>
         </div>
         <div className='pl-10 w-1/2'>
@@ -67,9 +78,9 @@ const About = () => {
           <h1 className='uppercase font-semibold mt-6' >MONEY BACK GUARANTEE </h1>
           <span className='mt-2' >We reurn money within 30 days</span>
         </div>
-        
+
       </div>
-      
+
     </div>
   )
 }

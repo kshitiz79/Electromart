@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import loginLogo from '../../assets/loginLogo.png'
 import { useSelector, useDispatch } from 'react-redux';
 
-import { setUser, logOut } from '../../features/user/userSlice';
+import { setUser, logOut } from '../../features/user/userSlice.js';
 
 const Signup = () => {
      const [name, setName] = useState("");

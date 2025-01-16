@@ -3,7 +3,7 @@ import CartCard from '../../components/CartCard'
 
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import {  clearCart } from '../../features/cart/cartSlice';
+import {  clearCart } from '../../features/cart/cartSlice.js';
 
 
 

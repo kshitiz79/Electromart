@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { removeItem, decreaseItemQuantity, increaseItemQuantity } from '../features/cart/cartSlice';
+import { removeItem, decreaseItemQuantity, increaseItemQuantity } from '../features/cart/cartSlice.js';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 const CartCard = ({ cardData }) => {

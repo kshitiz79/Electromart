@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 
 import { useDispatch, useSelector } from 'react-redux';
-import { addItem } from '../../features/cart/cartSlice';
-import { decreaseItemQuantity, increaseItemQuantity } from '../../features/cart/cartSlice';
+import { addItem } from '../../features/cart/cartSlice.js';
+import { decreaseItemQuantity, increaseItemQuantity } from '../../features/cart/cartSlice.js';
 
 
 //import Havitfront from "../../assets/Havitfront.png"
@@ -11,7 +11,7 @@ import { decreaseItemQuantity, increaseItemQuantity } from '../../features/cart/
 // import Havit2 from "../../assets/Havit2.png"
 // import Havit3 from "../../assets/Havit3.png"
 // import Havit4 from "../../assets/Havit4.png"
-import { cardData } from '../../data/product'
+import { cardData } from '../../data/product.js'
 import Card from '../../components/Card'
 import { useParams } from "react-router-dom";
 

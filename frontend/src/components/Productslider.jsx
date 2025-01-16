@@ -24,7 +24,7 @@ const Productslider = () => {
         <Card key={card.id} card={card} />
       ))}
     </div>
-    <Link to="/allproducts" className="mt-20 bg-red-500 rounded hover:bg-red-600 border text-white py-2 px-4" >Viewll Products</Link>
+    <Link to="/allproducts" className="mt-20 bg-red-500 rounded hover:bg-red-600 border text-white py-2 px-4" >View all Products</Link>
   </div></>
   )
 }

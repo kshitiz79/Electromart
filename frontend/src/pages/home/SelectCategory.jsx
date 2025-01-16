@@ -1,6 +1,6 @@
 // import cell from "../../assets/cell.png"
 import CategoryCard from "../../components/CategoryCard"
-import { categoryData } from "../../data/category"
+import { categoryData } from "../../data/category.js"
 
 const SelectCategory = () => {
     return (
